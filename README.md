@@ -10,7 +10,7 @@ Category 1:People
        -Hillary Clinton
        -George Bush
      *Athletes
-       -Dwayne Wade
+       -Michael Jordan
        -Tom Brady
 
    Category 2:Places
