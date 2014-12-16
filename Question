@@ -1,0 +1,17 @@
+public class Question {
+
+String question_;
+boolean answer_;
+public Question(String question, boolean answer){
+question_=question;
+answer_=answer;
+}
+ 
+public String getQuestion(){
+return question_;
+}
+ 
+public boolean getAnswer(){
+return answer_;
+}
+}
