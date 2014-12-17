@@ -1,0 +1,50 @@
+public class Question {
+
+ String question_;
+ boolean hasAnswer_;
+ String answer;
+ Question yesQuestion_;
+ Question noQuestion_;
+
+ public Question(String question) {
+  question_ = question;
+ }
+
+ public String getQuestion() {
+  return question_;
+ }
+ 
+
+ public boolean hasAnswer() {
+  return hasAnswer_;
+ }
+
+ public void setAnswerAnimal(String animal) {
+  hasAnswer_=true;
+  answer = "you're thinking of a " + animal + "!";
+ }
+
+ public void setYesQuestion(Question yesQuestion) {
+  yesQuestion_ = yesQuestion;
+ }
+
+ public void setNoQuestion(Question noQuestion) {
+  noQuestion_ = noQuestion;
+ }
+ 
+ public Question getYesQuestion(){
+  return yesQuestion_;
+ }
+ 
+ public Question getNoQuestion(){
+  return noQuestion_;
+ }
+ 
+ public String getAnswer(){
+  return answer;
+ }
+
+ public static void main(String[] args) {
+ 
+ }
+}
