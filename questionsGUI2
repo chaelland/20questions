@@ -1,0 +1,118 @@
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+
+import javax.swing.*;
+
+
+public class QuestionGui {
+ class YesButtonListener implements ActionListener{
+
+  @Override
+  public void actionPerformed(ActionEvent arg0) {
+   currentQuestion=currentQuestion.getYesQuestion();
+   updateQuestion(currentQuestion.getQuestion());
+   checkIfOver();
+  }
+ }
+ 
+ class NoButtonListener implements ActionListener{
+  @Override
+  public void actionPerformed(ActionEvent arg0) {
+   currentQuestion= currentQuestion.getNoQuestion();
+   updateQuestion(currentQuestion.getQuestion());
+     checkIfOver();
+  }
+ }
+ 
+ class ResetButtonListener implements ActionListener{
+  @Override
+  public void actionPerformed(ActionEvent arg0) {
+   currentQuestion=questions_[1];
+   updateQuestion(questions_[1].getQuestion());
+  }
+ }
+
+ JFrame frame_;
+ JTextField questionField_;
+ Question[] questions_;
+ Question currentQuestion;
+ boolean answer;
+
+ 
+ public QuestionGui(){
+  frame_= new JFrame("20 questions");
+  BorderLayout borderLayout= new BorderLayout();
+  frame_.setLayout(borderLayout);
+  GridLayout buttonLayout= new GridLayout(1,3);
+  JButton yesButton= new JButton("yes");
+  yesButton.addActionListener(new YesButtonListener());
+  JButton noButton= new JButton("no");
+  noButton.addActionListener(new NoButtonListener());
+  JButton resetButton= new JButton("reset");
+  resetButton.addActionListener(new ResetButtonListener());
+  JPanel buttonPanel= new JPanel();
+  buttonPanel.setLayout(buttonLayout);
+  buttonPanel.add(yesButton);
+  buttonPanel.add(noButton);
+  buttonPanel.add(resetButton);
+  JPanel questionPanel= new JPanel();
+  questionField_= new JTextField();
+  questionPanel.add(questionField_);
+  makeQuestions();
+  updateQuestion(questions_[1].getQuestion());
+  currentQuestion=questions_[1];
+  frame_.add(questionPanel,BorderLayout.CENTER);
+  
+  frame_.setSize(600, 600);
+  buttonPanel.setPreferredSize(new Dimension(frame_.getWidth(), frame_
+    .getHeight() / 6));
+  frame_.add(buttonPanel,BorderLayout.SOUTH);
+  frame_.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  frame_.setVisible(true);
+  
+ }
+ 
+ /**
+  * updates the question in frame to parameter newQuestion
+  * @param newQuestion the new question to display
+  */
+ public void updateQuestion(String newQuestion){
+  questionField_.setText(newQuestion);
+ }
+
+// public void checkAnswer(){
+//  if(questions_[currentQuestion].getAnswer()==answer){
+//   System.out.println("you are correct!");
+//  }else{
+//   System.out.println("wrong answer!");
+//  }
+//  currentQuestion++;
+//  updateQuestion(questions_[currentQuestion].getQuestion());
+// }
+ public void checkIfOver(){
+  if(currentQuestion.hasAnswer()){
+   updateQuestion(currentQuestion.getAnswer());
+  }
+ }
+ 
+ public void makeQuestions(){
+//  Question q1= new Question("is the sky green?",false);
+//  Question q2= new Question("is the ocean blue?",true);
+//  Question q3= new Question("can pigs fly?",true);
+//  questions_[0]=q1;
+//  questions_[1]=q2;
+//  questions_[2]=q3;
+  
+  QuestionBuilder builder= new QuestionBuilder();
+  questions_=builder.buildQuestions(new File("questions.txt"));
+    
+ }
+ public static void main(String[] args) {
+  QuestionGui gui= new QuestionGui();
+  
+ }
+ 
+ 
+}
