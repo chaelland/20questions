@@ -1,0 +1,48 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+
+public class QuestionBuilder {
+
+ public Question[] buildQuestions(File questionFile){
+  Question[] questions = new Question[75];
+  Scanner scanner=null;
+  try {
+   scanner= new Scanner(questionFile);
+  } catch (FileNotFoundException e) {
+   // TODO Auto-generated catch block
+   e.printStackTrace();
+  }
+  while (scanner.hasNext()) {
+   //System.out.println("here");
+   String next= scanner.next();
+   if(next.equals("ENDQ")){
+    break;
+   }
+   int questionNumber=0;
+   if(next.equals("Q")){
+    questionNumber= scanner.nextInt();
+   }
+   questions[questionNumber]=new Question(scanner.nextLine());
+  }
+  while(scanner.hasNextInt()){
+   //System.out.println();
+   int linkfrom= scanner.nextInt();
+   scanner.next();
+   int linkTo= scanner.nextInt();
+   questions[linkfrom].setYesQuestion(questions[linkTo]);
+   int linkfromN= scanner.nextInt();
+   scanner.next();
+   int linkToN= scanner.nextInt();
+   questions[linkfromN].setNoQuestion(questions[linkToN]);
+   
+  }
+  scanner.next();
+  while(scanner.hasNextInt()){
+   int next= scanner.nextInt();
+   questions[next].setAnswerAnimal(scanner.nextLine());
+  }
+  return questions;
+ }
+}
