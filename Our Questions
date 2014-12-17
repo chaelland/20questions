@@ -1,92 +1,82 @@
-20 Questions Amazon animals 
-Sloth, toucan, jaguar, crocodile, Poison dart frog, anaconda, Monarch Butterfly, Piranha, Jeweled Caterpillar, Gorilla 
-Sloth:
-Does it lay eggs?
-Can it turn its head 270 ̊?
-
-Toucan:
-Does it fly?
-Does it have feathers?
-Does it have a large beak?
-Is it colorful?
-Is it black?
-Does it eat small animals?
-Does it share qualities with humans?
-Jaguar: 
-Does it have a wide diet?
-Does it like to swim?
-Gorilla:
-Does it have arms?
-Are its arms longer than its legs?
-Does it eat plants? 
-Are they social?
-Does it have hair?
-Is it black?
-Crocodile:
-Is it amphibious? 
-Does it eat meat?
-Does it drown its victims?
-Is it long?
-Poison dart frog:
-Does it lay eggs on leaves?
-Is it small?
-Is it very small?
-Does it hop?
-Is it poisonous?
-Is it only dangerous in nature?
-Anaconda:
-Is it large?
-Do they grow continuous?
-Does it spend most of the time in the water?
-Does it have a wide diet?
-Does it take long to eat food?
-Does it chew its food?
-Does it move on its belly?
-Monarch Butterfly:
-Is it small?
-Is it colorful?
-Does it have multiple life stages?
-Does it have antennae?
-Does it lay eggs?
-Does it migrate? 
-Is it poisonous?
-Piranha:
-Is it small?
-Does it live in water?
-Does it have sharp teeth?
-Does it have fins?
-
-
-Is it old?
-Is it social?
-Does it have blood frenzies? 
-Jeweled Caterpillar:
-Is it gelatinous?
-Does it have multiple life stages?
-Does it turn into a moth?
-Is it fuzzy?
-Is it poisonous? No
-Is it fragile?
-GENERAL QUESTIONS:
-Does it have four legs?
-Does it have more than four legs?
-Does it have less than four legs?
-Is it a mammal?
-Is it an insect?
-Is it a carnivore?
-Is it an herbivore?
-Is it an omnivore? 
-Does it live on land?
-Does it live in water?
-Can it fly?
-Can it glide?
-Is it endangered? 
-Does it live in trees?
-Does it live in groups?
-Does it live alone?
-Does it watch over its young?
-Does it enjoy swimming?
-Does it have predators?
-Does it have prey?
-
-
+Questions      
+Q 1 Does it live in water    
+Q 2 Does it have legs  
+Q 3 Is it an insect   
+Q 4 Does it have a shell    
+Q 5 Does it have tentacles     
+Q 6 Does it have claws    
+Q 7 Is it very small  
+Q 8 Does it have more than five limbs   
+Q 9 Is it a carnivore    
+Q 10 Is it longer than it is wide   
+Q 11 Does it move slowly    
+Q 12 Does it have different stages of life   
+Q 13 Is it a mammal   
+Q 14 Does it produce ink    
+Q 15 Can it move freely  
+Q 16 Does it have sharp teeth  
+Q 17 Is it orange and white    
+Q 18 Is it a lobster     
+Q 19 Is it a crab     
+Q 20 Is it a snail     
+Q 21 NONAnimals     
+Q 22 Is it a tadpole    
+Q 24 Is it an otter    
+Q 26 Is it an octopus    
+Q 27 Is it a squid    
+Q 28 Is it a cuttlefish     
+Q 29 Is it a starfish     
+Q 30 Is it a shark     
+Q 32 Is it a clown fish      
+Q 33 Is it a marlin     
+Q 34 Does it have wings    
+Q 35 Does it have legs    
+Q 36 Does it have feathers   
+Q 37 Does it have antenna  
+Q 38 Can it be a pet    
+Q 39 Is it a reptile    
+Q 40 Is it colorful    
+Q 41 Does it go through metamorphosis     
+Q 42 Does it live in a colony    
+Q 43 Does it eat dirt    
+Q 44 Does it bark    
+Q 45 Does it make milk    
+Q 46 Does it slither     
+Q 48 Is it a toucan    
+Q 50 Is it a butter fly     
+Q 52 Is it an ant     
+Q 54 Is it a worm     
+Q 56 Is it a dog     
+Q 58 Is it a cow     
+Q 60 Is it a snake     
+ENDQ
+  1 Y 2 1 N 3
+  2 Y 4 2 N 5
+  3 Y 34 3 N 35
+  4 Y 6 4 N 7
+  5 Y 8 5 N 9
+  6 Y 10 6 N 11
+  7 Y 12 7 N 13
+  8 Y 14 8 N 15
+  9 Y 16 9 N 17
+  10 Y 18 10 N 19
+  11 Y 20 11 N 21
+  12 Y 22 12 N 21
+  13 Y 24 13 N 21
+  14 Y 26 14 N 27
+  15 Y 28 15 N 29
+  16 Y 30 16 N 21
+  17 Y 32 17 N 33
+  34 Y 36 34 N 37
+  35 Y 38 35 N 39
+  36 Y 40 36 N 41
+  37 Y 42 37 N 43
+  38 Y 44 38 N 45
+  39 Y 46 39 N 21
+  40 Y 48 40 N 21
+  41 Y 50 41 N 21
+  42 Y 52 42 N 21
+  43 Y 54 43 N 21
+  44 Y 56 44 N 21
+  45 Y 58 45 N 21
+  46 Y 60 46 N 21
